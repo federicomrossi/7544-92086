@@ -27,6 +27,7 @@
 \usepackage{graphicx}
 \usepackage{url}
 \usepackage{courier}
+\usepackage{enumitem} % For the enumerate list with correlative childs items
 
 %% Fin PAQUETES
 
@@ -102,10 +103,10 @@
 \title{
 	  \Large 75.44 Admin. y Control de Proy. Informáticos I \\ 
 	  \medskip\large Facultad de Ingeniería, Universidad de Buenos Aires \\
-	  \bigskip\Huge Informe: Ejercicio N° X  \\
-	  \medskip\Large\textit{``Título del ejercicio realizado''} \\
-	  \bigskip\medskip\large\textbf{Federico Rossi (92086), ...} \\
-	  \medskip\normalsize\texttt{\{federicomrossi, ...\}@gmail.com} \\
+	  \bigskip\Huge Informe: Ejercicio N° 0  \\
+	  \medskip\huge\textit{``Sistema de Pickeo''} \\
+	  \bigskip\bigskip\large\textbf{Federico Rossi (92.086), Ezequiel Reyes (92.119)} \\
+	  \medskip\normalsize\texttt{\{federicomrossi, ezequielmreyes\}@gmail.com} \\
 }
 \date{}
 \maketitle
@@ -113,7 +114,9 @@
 
 
 
-% INTRODUCCIÓN
+%
+% Enunciado
+%
 \section{Enunciado}
 	
 	Una empresa de venta directa \textit{Direcseller} tiene la siguiente configuración de sistemas:
@@ -150,6 +153,279 @@
 
 \bigskip
 
+
+
+
+%
+% Project Charter
+%
+\section{Project Charter}
+	
+
+\subsection{Justificación del proyecto}
+
+	La migración  e integración de los distintos sistemas permitirá centralizar la gestión de los distintos módulos sectoriales que constituyen a la empresa. Esto reducirá la tasa de errores aumentando al mismo tiempo los niveles de productividad de los empleados. Además, ya no se tendrá un sistema obsoleto, sino que se contará con un sistema escalable y actualizable a futuro.
+\medskip
+
+
+\subsection{Objectivos del proyecto de alto nivel}
+
+	Los objetivos se centran en migrar los módulos Facturación, Ventas y Cuentas a cobrar a ERP, migrar el sistema de Pickeo también a ERP, crear una aplicación que cumpla la función de interfacear entre el sistema ERP y la aplicación Java, la cual cubre la parte de marketing y planificación de ventas, y por último, crear una interfaz entre el módulo de pedidos y el sistema ERP. Todos el proyecto en general se realizará en el plazo de 1 año.
+\medskip
+
+
+\subsection{Requisitos de alto nivel}
+
+	[ Colocar texto aquí ]
+
+\medskip
+
+
+\subsection{Criterios de aprobación del proyecto}
+
+	[ Colocar texto aquí ]
+
+\medskip
+
+
+\subsection{Descripción del proyecto de alto nivel}
+
+	[ Colocar texto aquí ]
+
+\medskip
+
+
+\subsection{Riesgos de alto nivel}
+
+	[ Colocar texto aquí ]
+
+\medskip
+
+
+\subsection{Limitaciones}
+
+	[ Colocar texto aquí ]
+
+\medskip
+
+
+\subsection{Supuestos}
+
+	[ Colocar texto aquí ]
+
+\medskip
+
+
+\subsection{Stakeholders}
+
+	En el \textit{Cuadro 1} se detallaron dos de los stakeholders detectados en el presente caso. Se pueden encontrar más de estos, a saber, personal de los sectores afectados por las migraciones, personal de picking que deberá ser capacitada para utilizar la nueva maquinaria, entre otros.
+	\medskip
+
+	\begin{table}[!hbt]
+		\begin{center}
+		\begin{tabular}{| >{\raggedright}m{1.8cm} | >{\centering}m{1.5cm} | >{\raggedright}m{2cm} | >{\raggedright}m{1.5cm} | >{\centering}m{2.2cm} | >{\centering}m{1.8cm} | >{\centering}m{1.8cm} | >{\centering}m{2cm} |}
+			\hline
+			\rowcolor[gray]{0.9}\textbf{Nombre} & \textbf{Empresa, posición} & \textbf{Rol} & \textbf{Tipo} & \textbf{Necesidad de información} & \textbf{Intereses en el proyecto} & \textbf{Impacto en el proyecto} & \textbf{Información de Contacto} \tabularnewline
+			\hline
+			% A & B & C & D & E & F & G & H \tabularnewline
+			% \hline
+			Adrian Torrasco & Direcseller, Gerente de sector Facturación & Será consultado ante dudas del manejo de la Facturación y la integración del nuevo sistema en su sector. & Interno, receptor de información & Documen- tación para adaptar su sector al nuevo uso del sistema; Reuniones quincenales. & Constatar utilidad del nuevo sistema & Positivo, servirá de soporte en la migración & 4012-4587 int 746 \tabularnewline
+			\hline
+			Enrique Amado & SoftApli- cacion, CEO & Lider del proyecto de desarrollo en Java para el Picking en formato de llave en mano. & Externo, consultor & Requerimiento de personal interno que le otorge información necesaria para llevar a cabo el desarrollo. Semanal vía email con reuniones quincenales. & Sector de Picking & Positivo & ea@sa.com, 4891-3791 int 12 \tabularnewline
+			\hline
+		\end{tabular}
+		\caption{Registro de Stakeholders.}
+		\end{center}
+	\end{table}
+
+
+\bigskip
+
+
+\newpage
+
+
+%
+% WBS
+%
+\section{WBS}
+
+
+\subsection{Diagrama}
+
+
+% Figura 1
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=1\textwidth]{images/7544-Ej00-WBS.png}
+	\medskip
+	\caption{Diagrama WBS para el proyecto.}
+\end{figure}
+\bigskip\bigskip\bigskip\bigskip
+
+
+\subsection{Diccionario}
+
+	A continuación se detalla el diccionario correspondiente al diagrama WBS de la \textit{Figura 1}:
+	\bigskip
+
+	\begin{enumerate}
+		\itemsep=3pt \topsep=0pt \partopsep=0pt \parskip=0pt \parsep=0pt
+		
+		\item \textbf{Migración MIH a ERP}: [ Colocar texto aquí ]
+
+			\begin{enumerate}[label*=\arabic*.]
+
+				\item \textbf{Facturación}: [ Colocar texto aquí ]
+
+					\begin{enumerate}[label*=\arabic*.]
+						\itemsep=3pt \topsep=0pt \partopsep=0pt \parskip=0pt \parsep=0pt
+
+						\item \textbf{App}: [ Colocar texto aquí ]
+
+						\item \textbf{Pruebas}: [ Colocar texto aquí ]
+
+						\item \textbf{Integración}: [ Colocar texto aquí ]
+
+					\end{enumerate}
+			
+				\item \textbf{Ventas}: [ Colocar texto aquí ]
+
+					\begin{enumerate}[label*=\arabic*.]
+						\itemsep=3pt \topsep=0pt \partopsep=0pt \parskip=0pt \parsep=0pt
+
+						\item \textbf{App}: [ Colocar texto aquí ]
+
+						\item \textbf{Pruebas}: [ Colocar texto aquí ]
+
+						\item \textbf{Integración}: [ Colocar texto aquí ]
+
+					\end{enumerate}
+
+				\item \textbf{Cuentas a cobrar}: [ Colocar texto aquí ]
+
+					\begin{enumerate}[label*=\arabic*.]
+						\itemsep=3pt \topsep=0pt \partopsep=0pt \parskip=0pt \parsep=0pt
+
+						\item \textbf{App}: [ Colocar texto aquí ]
+
+						\item \textbf{Pruebas}: [ Colocar texto aquí ]
+
+						\item \textbf{Integración}: [ Colocar texto aquí ]
+
+					\end{enumerate}
+
+			\end{enumerate}
+
+		\item \textbf{App Pedidos}: [ Colocar texto aquí ]
+
+			\begin{enumerate}[label*=\arabic*.]
+
+				\item \textbf{App}: [ Colocar texto aquí ]
+			
+				\item \textbf{Interfaz}: [ Colocar texto aquí ]
+
+				\item \textbf{Pruebas}: [ Colocar texto aquí ]
+
+				\item \textbf{Integración}: [ Colocar texto aquí ]
+
+				\item \textbf{Compras escaners}: [ Colocar texto aquí ]
+
+			\end{enumerate}
+
+		\item \textbf{Java}: [ Colocar texto aquí ]
+
+			\begin{enumerate}[label*=\arabic*.]
+
+				\item \textbf{Interfaz}: [ Colocar texto aquí ]
+			
+				\item \textbf{Pruebas}: [ Colocar texto aquí ]
+
+				\item \textbf{Integración}: [ Colocar texto aquí ]
+
+			\end{enumerate}
+
+		\item \textbf{Pickeo}: [ Colocar texto aquí ]
+
+			\begin{enumerate}[label*=\arabic*.]
+
+				\item \textbf{PLC}: [ Colocar texto aquí ]
+
+					\begin{enumerate}[label*=\arabic*.]
+						\itemsep=3pt \topsep=0pt \partopsep=0pt \parskip=0pt \parsep=0pt
+
+						\item \textbf{Programación}: [ Colocar texto aquí ]
+
+						\item \textbf{Prueba de frenos}: [ Colocar texto aquí ]
+
+					\end{enumerate}
+
+				\item \textbf{Pickeadoras en Java}: [ Colocar texto aquí ]
+
+					\begin{enumerate}[label*=\arabic*.]
+						\itemsep=3pt \topsep=0pt \partopsep=0pt \parskip=0pt \parsep=0pt
+
+						\item \textbf{App}: [ Colocar texto aquí ]
+
+						\item \textbf{Pruebas}: [ Colocar texto aquí ]
+
+					\end{enumerate}
+
+				\item \textbf{Integración ERP}: [ Colocar texto aquí ]
+
+					\begin{enumerate}[label*=\arabic*.]
+						\itemsep=3pt \topsep=0pt \partopsep=0pt \parskip=0pt \parsep=0pt
+
+						\item \textbf{Pedidos}: [ Colocar texto aquí ]
+
+						\item \textbf{Maestros}: [ Colocar texto aquí ]
+
+						\item \textbf{Facturación}: [ Colocar texto aquí ]
+
+						\item \textbf{Pruebas}: [ Colocar texto aquí ]
+
+					\end{enumerate}
+			
+				\item \textbf{Compras}: [ Colocar texto aquí ]
+
+					\begin{enumerate}[label*=\arabic*.]
+						\itemsep=3pt \topsep=0pt \partopsep=0pt \parskip=0pt \parsep=0pt
+
+						\item \textbf{Escaners de Pickeo}: [ Colocar texto aquí ]
+
+						\item \textbf{Escaners de productos}: [ Colocar texto aquí ]
+
+						\item \textbf{Equipos PLC}: [ Colocar texto aquí ]
+
+					\end{enumerate}
+
+			\end{enumerate}
+
+		\item \textbf{Administración del proyecto}: [ Colocar texto aquí ]
+
+			\begin{enumerate}[label*=\arabic*.]
+
+				\item \textbf{Recursos}: [ Colocar texto aquí ]
+
+					\begin{enumerate}[label*=\arabic*.]
+						\itemsep=3pt \topsep=0pt \partopsep=0pt \parskip=0pt \parsep=0pt
+
+						\item \textbf{Técnicos}: [ Colocar texto aquí ]
+
+						\item \textbf{Funcionales}: [ Colocar texto aquí ]
+
+					\end{enumerate}
+			
+				\item \textbf{Tercerización de Picking}: [ Colocar texto aquí ]
+
+				\item \textbf{Estimación de Tiempos}: [ Colocar texto aquí ]
+
+			\end{enumerate}
+
+	\end{enumerate}
+	\medskip
+
+\bigskip
 
 
 
