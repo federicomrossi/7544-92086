@@ -168,7 +168,7 @@
 \medskip
 
 
-\subsection{Objectivos del proyecto de alto nivel}
+\subsection{Objetivos del proyecto de alto nivel}
 
 	Los objetivos se centran en migrar los módulos Facturación, Ventas y Cuentas a cobrar a ERP, migrar el sistema de Pickeo también a ERP, crear una aplicación que cumpla la función de interfacear entre el sistema ERP y la aplicación Java, la cual cubre la parte de marketing y planificación de ventas, y por último, crear una interfaz entre el módulo de pedidos y el sistema ERP. Todos el proyecto en general se realizará en el plazo de 1 año.
 \medskip
@@ -176,43 +176,68 @@
 
 \subsection{Requisitos de alto nivel}
 
-	[ Colocar texto aquí ]
+	\begin{itemize}
+		\itemsep=3pt \topsep=0pt \partopsep=0pt \parskip=0pt \parsep=0pt
+		\item Migración completa del sistema de Cobol a ERP (tanto sistemas como servidores obsoletos).
+		\item Interfaseo del ERP con la aplicación JAVA.
+		\item Migración del sistema de Pickeo: interfaz para las pantallas en la cinta de producción en se realizará en JAVA, pedidos y gestión de artículos estarán en el ERP, al igual que la facturación de las cajas armadas.
+	\end{itemize}
 
 \medskip
 
 
 \subsection{Criterios de aprobación del proyecto}
 
-	[ Colocar texto aquí ]
+	Los criterios que se utilizarán parar evaluar el la aprobación del proyecto, se basarán de acuerdo a los siguientes puntos:
+	\begin{itemize}
+		\itemsep=3pt \topsep=0pt \partopsep=0pt \parskip=0pt \parsep=0pt
+		\item Máxima cantidad de issues por día luego de los primeros 10 días de lanzamiento: 5.
+		\item Obtener un sistema estable habiendo pasado los primeros 10 días de prueba: después de 20 días se espera obtener como máximo 15 issues.
+		\item Soporte de pruebas de stress: servidor, sistema ERP, sistema de pickeo.
+	\end{itemize}
 
 \medskip
 
 
 \subsection{Descripción del proyecto de alto nivel}
 
-	[ Colocar texto aquí ]
+	El proyecto consiste principalmente en la migración de los sistemas realizados en lenguaje COBOL al sistema ERP recientemente liberado. Los circuitos gestionados por COBOL son los de Facturación, Ventas, Pedidos y Cuentas a cobrar; todos estos deben migrarse del sistema viejo al ERP (incluyendo la migración del servidor). Por otro lado debe poder interfasearse el ERP para poder compatibilizar los módulos de marketing y planificación de ventas realizados en JAVA. Por último debe realizarse la migración del Sistema de Pickeo al ERP, incluyendo la integración de escáneres para y programación PLC's para los frenos de la línea; esta migración incluye la interfaz gráfica realizada en JAVA para que se muestre la descripción del artículo a colocar dentro de la caja. 
+Para realizar este proyecto se cuenta con un 1 año.
 
 \medskip
 
 
 \subsection{Riesgos de alto nivel}
 
-	[ Colocar texto aquí ]
-
+	\begin{itemize}
+	\itemsep=3pt \topsep=0pt \partopsep=0pt \parskip=0pt \parsep=0pt
+	\item Migración del servidor obsoleto: es posible que para llevar a cabo esta migración deba prestarse atención en las incompatibilidades que pueda presentar el sistema realizado en COBOL. 
+	\item Como los revendedores trabajan en la calle y acceden al sistema desde allí, debe prestarse atención a la seguridad del sistema en caso de robo, eso aumenta el alcance del proyecto ya que no hay especificaciones de seguridad realizadas en el sistema anterior.
+	
+	\end{itemize}
 \medskip
 
 
 \subsection{Limitaciones}
 
-	[ Colocar texto aquí ]
+	\begin{itemize}
+		\itemsep=3pt \topsep=0pt \partopsep=0pt \parskip=0pt \parsep=0pt
+		\item Facturación electrónica: dependerá de la api provista por la AFIP.
+		\item Escáneres: es posible que los escáneres deban ser importados, en ese caso se tiene que tomar en cuenta las probables retenciones de la aduana para la importación de los mismos. 
+	\end{itemize}
 
 \medskip
 
 
 \subsection{Supuestos}
 
-	[ Colocar texto aquí ]
-
+	\begin{itemize}
+		\itemsep=3pt \topsep=0pt \partopsep=0pt \parskip=0pt \parsep=0pt
+		\item Debido a que no hay especificaciones sobre versiones que se quieren utilizar para los distintos módulos, nosotros tomaremos esa decisión en base a lo que creamos mas conveniente para el mejor funcionamiento y estabilidad del sistema.
+		\item Se cuenta con acceso total al sistema anterior, considerando bases de datos, aplicación, código fuente, etc.
+		\item Se realizarán pruebas seguidas de integración por cada módulo del proyecto para garantizar correcto funcionamiento a medida que se va avanzando en el mismo.
+		\item La logística para la interfaz de usuario necesaria correrá por cuenta de un diseñador externo. 
+	\end{itemize}
 \medskip
 
 
