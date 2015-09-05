@@ -7,6 +7,8 @@
 *.out
 *.toc
 
+.fuse_hidden*
+
 ## Intermediate documents:
 *.dvi
 *-converted-to.*
